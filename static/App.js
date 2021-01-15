@@ -10,7 +10,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="viewport">
+      <div className="columns is-multiline">
         <SidePanel data={this.props.data} />
         <Main />
       </div>

@@ -37,8 +37,8 @@ class Main extends React.Component {
         }
         console.log(panel);
         return (
-            <div class="main">
-                <div class="container">
+            <div className="column is-9">
+                <div className="container">
                     <div className="tabs is-fullwidth">
                         <ul>
                             <li className={me.props.view == Constants.VIEW_EVENT ? "is-active" : ""}><a onClick={this.handleClick} tab="event">Events</a></li>
