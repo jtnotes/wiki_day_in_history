@@ -1,0 +1,18 @@
+[package]
+name = "wdih"
+version = "0.0.1"
+authors = ["niujin <niujin@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "0.2", features = ["full"] }
+# warp = "0.2"
+actix-web = "3"
+actix-files = "0.3"
+serde = {version = "1.0", features = ["derive"] }
+serde_derive = "1.0"
+yaml-rust = "0.4"
+# quick-xml = { version = "0.17"}
+# xmlparser = "0.13.3"

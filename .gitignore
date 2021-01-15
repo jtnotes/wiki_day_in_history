@@ -1,0 +1,4 @@
+.vscode
+target
+static/dist
+static/node_modules

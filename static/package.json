@@ -1,0 +1,56 @@
+{
+    "name": "wiki-day-in-history",
+    "version": "0.0.1",
+    "description": "",
+    "main": "null.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "dependencies": {
+        "@blueprintjs/core": "^3.36.0",
+        "@blueprintjs/datetime": "^3.20.0",
+        "axios": "^0.21.1",
+        "buffer": "^6.0.3",
+        "classnames": "^2.2.6",
+        "fast-xml-parser": "^3.17.6",
+        "namor": "^2.0.2",
+        "react": "^16.8.6",
+        "react-day-picker": "^7.4.8",
+        "react-dom": "^16.8.6",
+        "react-html-parser": "^2.0.2",
+        "react-redux": "^7.2.2",
+        "react-table": "^7.0.0-rc.15",
+        "react-table-v6": "^6.8.6",
+        "redux": "^4.0.5",
+        "styled-components": "^4.3.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/plugin-proposal-class-properties": "^7.5.5",
+        "@babel/preset-env": "^7.4.5",
+        "@babel/preset-react": "^7.0.0",
+        "babel-loader": "^8.0.6",
+        "bulma": "^0.8.2",
+        "copy-webpack-plugin": "^7.0.0",
+        "css-loader": "^3.2.0",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.8.0",
+        "node-sass": "^4.14.1",
+        "process": "^0.11.10",
+        "redux-devtools": "^3.5.0",
+        "sass-loader": "^8.0.0",
+        "style-loader": "^1.0.0",
+        "webpack": "latest",
+        "webpack-cli": "^3.3.4",
+        "webpack-dev-server": "^3.7.2"
+    },
+    "scripts": {
+        "build": "webpack --mode production",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": ""
+}

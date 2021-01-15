@@ -1,0 +1,18 @@
+.viewport {
+    width: 100%;
+    display: table;
+}
+
+.side-panel {
+    /* position: absolute; */
+    float: left;
+    /* left: 0px; */
+    width: 265px;
+}
+
+.main {
+    /* position: absolute; */
+    float: right;
+    /* right: 0px; */
+    width: calc(100% - 265px);
+}
