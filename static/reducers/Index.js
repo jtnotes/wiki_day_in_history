@@ -2,7 +2,7 @@ import ActionConstants from "../actions/Constants";
 import Constants from "../Constants";
 
 const initialState = {
-  view: Constants.VIEW_EVENTS,
+  view: Constants.VIEW_EVENT,
   eventLists: null,
   births: null,
   deaths: null,

@@ -16,3 +16,8 @@
     /* right: 0px; */
     width: calc(100% - 265px);
 }
+
+.event-title{
+    font-size: 1.25rem;
+    margin-bottom: 0.1rem;
+}

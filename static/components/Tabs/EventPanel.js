@@ -23,7 +23,7 @@ class EventPanel extends React.Component {
         var events = l.events.map((e) => <li>{ReactHtmlParser(e)}</li>);
         return (
           <div>
-            <h3>{l.title}</h3>
+            <h5 className="event-title">{l.title}</h5>
             <ul>{events}</ul>
           </div>
         );

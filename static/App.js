@@ -11,7 +11,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="viewport">
-        <SidePanel />
+        <SidePanel data={this.props.data} />
         <Main />
       </div>
     );
