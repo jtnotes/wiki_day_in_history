@@ -39,7 +39,7 @@ class SidePanel extends React.Component {
 
   render() {
     return (
-      <div className="column">
+      <div className="column is-3">
         <DayPicker onDayClick={this.handleChange} />
       </div>
     );
