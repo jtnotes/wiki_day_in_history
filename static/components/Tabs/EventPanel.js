@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { changeView } from "../../actions/Index";
 
 import ReactHtmlParser from "react-html-parser";
-import Util from "../../Util";
 
 class EventPanel extends React.Component {
   constructor(props) {
