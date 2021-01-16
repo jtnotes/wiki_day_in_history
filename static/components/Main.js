@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { changeView } from '../actions/Index';
 
 import Constants from '../Constants';
+import { t } from '../I18';
 
 // import { Tab, Tabs } from "@blueprintjs/core";
 import EventPanel from './Tabs/EventPanel';
@@ -40,9 +41,9 @@ class Main extends React.Component {
             <div className="column">
                 <div className="container">
                     <nav className="tabs is-full">
-                        <a className={me.props.view == Constants.VIEW_EVENT ? "active" : ""} onClick={this.handleClick} tab="event">Events</a>
-                        <a className={me.props.view == Constants.VIEW_BIRTH ? "active" : ""} onClick={this.handleClick} tab="birth">Births</a>
-                        <a className={me.props.view == Constants.VIEW_DEATH ? "active" : ""} onClick={this.handleClick} tab="death">Deaths</a>
+                        <a className={me.props.view == Constants.VIEW_EVENT ? "active" : ""} onClick={this.handleClick} tab="event">{t('tab_event')}</a>
+                        <a className={me.props.view == Constants.VIEW_BIRTH ? "active" : ""} onClick={this.handleClick} tab="birth">{t('tab_birth')}</a>
+                        <a className={me.props.view == Constants.VIEW_DEATH ? "active" : ""} onClick={this.handleClick} tab="death">{t('tab_death')}</a>
                     </nav>
                 </div>
                 <section class="section tab-content-container" id="mainTabs">

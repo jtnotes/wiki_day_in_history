@@ -10,14 +10,9 @@ class EventPanel extends React.Component {
   }
 
   render() {
-    // var data = this.props.data;
     var content;
-    console.log("in eventpanel render");
     var eventLists = this.props.eventLists;
-    // console.log("muEvent=" + muEvent);
     if (eventLists != null) {
-      console.log("eventLists not null");
-      console.log(eventLists);
       content = eventLists.map((l) => {
         var events = l.events.map((e) => <li>{ReactHtmlParser(e)}</li>);
         return (

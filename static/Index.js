@@ -5,6 +5,11 @@ import axios from "axios";
 
 import Store from "./store/Store";
 import App from "./App";
+import Util from "./Util";
+
+
+var locale = 'zh_tw'
+Util.initI18(locale);
 
 var variant = 'zh-tw'; //TODO
 var today = new Date();
