@@ -3,7 +3,7 @@ const HWP = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const webpack = require('webpack');
-module.exports = {
+var config = {
   entry: {
     Index: "./Index.js",
   },
@@ -65,8 +65,21 @@ module.exports = {
       process: "process/browser",
     })
   ],
-  optimization: {
-    // We no not want to minimize our code.
-    minimize: false,
-  },
+};
+
+module.exports = (env, argv) => {
+  if (argv.mode === 'development') {
+    config.devtool = 'source-map';
+    config.optimization = {
+      minimize: false
+    }
+  }
+
+  if (argv.mode === 'production') {
+    config.optimization = {
+      minimize: true
+    }
+  }
+
+  return config;
 };
