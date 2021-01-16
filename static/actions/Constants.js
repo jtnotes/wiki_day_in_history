@@ -6,4 +6,12 @@ export default class Constants {
   static get CHANGE_VIEW() {
     return "CHANGE_VIEW";
   }
+
+  static get CHANGE_DATE() {
+    return "CHANGE_DATE";
+  }
+
+  static get CHANGE_NAVIGATION() {
+    return "CHANGE_NAVIGATION";
+  }
 }

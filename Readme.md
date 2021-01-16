@@ -33,5 +33,5 @@ In project root directory:
 
 # Test
 Tested on:  
-Windows 10 Enterprise LSTC 10.0.17763
-Linux 
+Windows 10 Enterprise LSTC 10.0.17763  
+Debian 9 (stretch)

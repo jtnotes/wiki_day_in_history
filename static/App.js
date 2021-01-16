@@ -1,7 +1,8 @@
 import React from "react";
 
-import SidePanel from "./components/SidePanel";
+// import SidePanel from "./components/SidePanel";
 import Main from "./components/Main";
+import Navigation from "./components/Navigation";
 
 class App extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="columns is-multiline">
-        <SidePanel data={this.props.data} />
+        <Navigation data={this.props.data} />
         <Main />
       </div>
     );
