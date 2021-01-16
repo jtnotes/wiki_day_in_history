@@ -12,5 +12,8 @@
     },
     "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "@blueprintjs/core": "^3.36.0"
+    }
 }
