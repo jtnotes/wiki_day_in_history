@@ -41,9 +41,9 @@ class Main extends React.Component {
                 <div className="container">
                     <div className="tabs is-fullwidth">
                         <ul>
-                            <li className={me.props.view == Constants.VIEW_EVENT ? "is-active" : ""}><a onClick={this.handleClick} tab="event">Events</a></li>
-                            <li className={me.props.view == Constants.VIEW_BIRTH ? "is-active" : ""}><a onClick={this.handleClick} tab="birth">Births</a></li>
-                            <li className={me.props.view == Constants.VIEW_DEATH ? "is-active" : ""}><a onClick={this.handleClick} tab="death">Deaths</a></li>
+                            <li className={me.props.view == Constants.VIEW_EVENT ? "is-active" : ""}><a className="tab" onClick={this.handleClick} tab="event">Events</a></li>
+                            <li className={me.props.view == Constants.VIEW_BIRTH ? "is-active" : ""}><a className="tab" onClick={this.handleClick} tab="birth">Births</a></li>
+                            <li className={me.props.view == Constants.VIEW_DEATH ? "is-active" : ""}><a className="tab" onClick={this.handleClick} tab="death">Deaths</a></li>
                         </ul>
                     </div>
                 </div>
