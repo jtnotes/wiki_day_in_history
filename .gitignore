@@ -1,4 +1,7 @@
 .vscode
 target
+node_modules
 static/dist
-static/node_modules
+*.bak
+*copy.*
+temp

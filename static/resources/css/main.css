@@ -1,56 +1,63 @@
 @import url("../../vendors/chota/css/chota.css");
-
 /* -------- customization of chota start --------------------------------------*/
 
 :root {
-    --color-primary: #106ba3;
-    --font-size: 14px;
+  --color-primary: #106ba3;
+  --font-size: 14px;
 }
 
 .container {
-    max-width: 100%;
-    width: 100%;
-    padding-left: 2px;
-    padding-right: 2px;
+  max-width: 100%;
+  width: 100%;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
+/* -------- common --------------------------------------*/
 
-/* -------- customization of chota end --------------------------------------*/
-
-.viewport {
-    width: 100%;
-    display: table;
-}
-
-.navigation {
-    /* position: absolute; */
-    float: left;
-    /* left: 0px; */
-    width: 265px;
-}
-
-.main {
-    /* position: absolute; */
-    float: right;
-    /* right: 0px; */
-    width: calc(100% - 265px);
-}
-
-.event-title {
-    font-size: 1.25rem;
-    margin-bottom: 0.1rem;
+body {
+  overflow: hidden;
 }
 
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0px;
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+/* -------- common --------------------------------------*/
+
+.viewport {
+  width: 100%;
+  display: table;
+}
+
+.navigation {
+  /* position: absolute; */
+  float: left;
+  /* left: 0px; */
+  width: 265px;
+}
+
+.main {
+  /* position: absolute; */
+  float: right;
+  /* right: 0px; */
+  width: calc(100% - 265px);
+}
+
+.event-title {
+  font-size: 16px;
+  margin-bottom: 0.1rem;
 }
 
 .data-panel {
-    /* overflow: auto; */
-    overflow: auto;
-    height: 500px;
-}
-
-body {
-    overflow: hidden;
+  /* overflow: auto; */
+  overflow: auto;
+  height: 500px;
+  padding: 10px 20px 0px 20px;
 }
