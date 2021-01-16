@@ -16,22 +16,40 @@ class Navigation extends React.Component {
     this.props.loadData(this.props.data);
   }
 
+  handleDateChange = (date) => {
+    var me = this;
+    var variant = 'zh-tw'; //TODO
+    axios
+      .get("/data/wiki_" + (date.getMonth() + 1) + "_" + date.getDate() + '_' + variant + ".json")
+      .then(function (resp) {
+        var data = resp.data;
+        me.props.changeDate(date);
+        me.props.loadData(data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+  }
+
   handleDayClick = (day, { selected }) => {
-    this.props.changeDate(day);
+    this.handleDateChange(day);
   }
 
   handleMonthSelect = (e) => {
     //TODO: change year if needed
     var date = new Date(this.props.date.getTime());
     date.setMonth(e.target.value);
-    this.props.changeDate(date);
+    this.handleDateChange(date);
   }
 
   handleDaySelect = (e) => {
     //TODO: change year if needed
     var date = new Date(this.props.date.getTime());
     date.setDate(e.target.value);
-    this.props.changeDate(date);
+    this.handleDateChange(date);
   }
 
   toggleMode = () => {
