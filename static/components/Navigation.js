@@ -88,7 +88,7 @@ class Navigation extends React.Component {
     if (navigation == Constants.NAVIGATION_NORMAL) {
       calendar = null;
     } else {
-      calendar = (<DayPicker selectedDays={me.props.date}
+      calendar = (<DayPicker selectedDays={me.props.date} month={me.props.date}
         onDayClick={me.handleDayClick} />)
     }
 
