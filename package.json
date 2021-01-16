@@ -6,6 +6,7 @@
     "scripts": {
         "backend": "cargo build --release && node release.js",
         "frontend": "cd static && npm run build",
+        "frontend-netlify": "cd static && npm i && npm run build",
         "release": "node release.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },

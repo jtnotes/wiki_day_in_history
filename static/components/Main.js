@@ -37,7 +37,7 @@ class Main extends React.Component {
         }
         console.log(panel);
         return (
-            <div className="column is-9">
+            <div className="column">
                 <div className="container">
                     <div className="tabs is-fullwidth">
                         <ul>
