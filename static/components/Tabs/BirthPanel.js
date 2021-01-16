@@ -13,7 +13,7 @@ class BirthPanel extends React.Component {
       items = this.props.births.map((b) => <li>{ReactHtmlParser(b)}</li>);
     }
     return (
-      <div>
+      <div className="data-panel">
         <ul>{items}</ul>
       </div>
     );

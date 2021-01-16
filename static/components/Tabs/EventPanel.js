@@ -28,7 +28,7 @@ class EventPanel extends React.Component {
         );
       });
     }
-    return <div>{content}</div>;
+    return <div className="data-panel">{content}</div>;
   }
 }
 

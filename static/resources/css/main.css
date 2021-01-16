@@ -1,9 +1,28 @@
+@import url("../../vendors/chota/css/chota.css");
+
+/* -------- customization of chota start --------------------------------------*/
+
+:root {
+    --color-primary: #106ba3;
+    --font-size: 14px;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+
+/* -------- customization of chota end --------------------------------------*/
+
 .viewport {
     width: 100%;
     display: table;
 }
 
-.side-panel {
+.navigation {
     /* position: absolute; */
     float: left;
     /* left: 0px; */
@@ -22,37 +41,16 @@
     margin-bottom: 0.1rem;
 }
 
-
-/* ------- copied from blueprint -----------------------------*/
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-a {
-    color: #106ba3;
-}
-
 a:hover {
-    text-decoration: underline;
+    cursor: pointer;
 }
 
-a.tab {
-    text-decoration: none;
+.data-panel {
+    /* overflow: auto; */
+    overflow: auto;
+    height: 500px;
 }
 
 body {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 1.28581;
-    text-transform: none;
-    color: #182026;
-    font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", "Icons16", sans-serif;
+    overflow: hidden;
 }
